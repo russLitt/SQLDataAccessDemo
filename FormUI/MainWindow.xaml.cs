@@ -43,5 +43,17 @@ namespace FormUI
 
             UpdateBindind();
         }
+
+        private void insertBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DataAccess db = new DataAccess();
+
+            db.InsertPerson(insertFirstNameText.Text, insertLastNameText.Text, insertEmailText.Text, insertPhoneText.Text);
+
+            insertFirstNameText.Text = "";
+            insertLastNameText.Text = "";
+            insertEmailText.Text = "";
+            insertPhoneText.Text = "";
+        }
     }
 }

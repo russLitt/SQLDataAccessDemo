@@ -18,7 +18,7 @@ namespace FormUI
         {
             get
             {
-                return $" {FirstName} {LastName} ({EmailAddress})";
+                return $" {id} {FirstName} {LastName} ({EmailAddress})";
             }
         }
 
